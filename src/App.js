@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Nav from "./componentes/Nav"
+import Principal from "./componentes/Principal"
+import Footer from "./componentes/Footer"
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav/>
+      <Principal/>
+      <Footer/>
     </div>
   );
 }
 
 export default App;
+
+{ /*
+crear de cero un proyecto con react
+Una barra de navegacion, un componente principal y un footer
+dentro del componente principal quiero dos secciones que sean iguales
+las dos secciones tienen que tener un titulo, un subtitulo y buna imagen
+el titulo, subtitulo, imagen, se tienen que pasar por props
+ademas cada seccion va a llamar al componente boton
+en la primera seccion el componente boton va a decir "primera"
+en la segunda el componente va a decir "segunda"
+si quieren estilar, que sea con sass
+Pista para puntos 7 y 8: como podemos hacer que section le diga a los 
+componentes dos mensajes distintos? 
+puede section recibir el mensaje de los botones como una prop?
+ */ }
